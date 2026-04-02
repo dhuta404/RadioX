@@ -1,0 +1,133 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1220"/>
+      <stop offset="1" stop-color="#121C30"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1A2438" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#131B2B" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="280" y1="120" x2="860" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6A45" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#2F7FFF" stop-opacity="0.14"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <circle cx="190" cy="90" r="220" fill="#FF5A36" fill-opacity="0.08"/>
+  <circle cx="1380" cy="140" r="180" fill="#2F7FFF" fill-opacity="0.08"/>
+
+  <rect x="24" y="24" width="250" height="952" rx="28" fill="#0A101C" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="48" y="50" width="54" height="54" rx="18" fill="#FF5A36"/>
+  <text x="65" y="87" fill="white" font-size="28" font-family="Segoe UI, Arial" font-weight="700">R</text>
+  <text x="118" y="78" fill="white" font-size="28" font-family="Segoe UI, Arial" font-weight="700">RadioFlow</text>
+  <text x="118" y="104" fill="#93A0B8" font-size="15" font-family="Segoe UI, Arial">Desktop Automation</text>
+
+  <rect x="48" y="136" width="202" height="154" rx="24" fill="url(#hero)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="68" y="156" width="64" height="28" rx="14" fill="rgba(255,255,255,0.08)"/>
+  <text x="84" y="175" fill="white" font-size="12" font-family="Segoe UI, Arial" letter-spacing="2">ON AIR</text>
+  <text x="68" y="214" fill="white" font-size="24" font-family="Segoe UI, Arial" font-weight="700">本地电台自动播出台</text>
+  <text x="68" y="246" fill="#CDD6E8" font-size="14" font-family="Segoe UI, Arial">导入音频、安排节目、自动播出</text>
+
+  <rect x="48" y="332" width="202" height="54" rx="16" fill="#1A2234"/>
+  <rect x="48" y="398" width="202" height="54" rx="16" fill="#141C2B"/>
+  <rect x="48" y="464" width="202" height="54" rx="16" fill="#141C2B"/>
+  <rect x="48" y="530" width="202" height="54" rx="16" fill="#141C2B"/>
+  <rect x="48" y="596" width="202" height="54" rx="16" fill="#141C2B"/>
+  <text x="78" y="366" fill="white" font-size="18" font-family="Segoe UI, Arial">Dashboard</text>
+  <text x="78" y="432" fill="#9BA7BD" font-size="18" font-family="Segoe UI, Arial">Schedule</text>
+  <text x="78" y="498" fill="#9BA7BD" font-size="18" font-family="Segoe UI, Arial">Library</text>
+  <text x="78" y="564" fill="#9BA7BD" font-size="18" font-family="Segoe UI, Arial">Rules</text>
+  <text x="78" y="630" fill="#9BA7BD" font-size="18" font-family="Segoe UI, Arial">Settings</text>
+
+  <text x="318" y="88" fill="#95A4BD" font-size="14" font-family="Segoe UI, Arial" letter-spacing="2">LIVE CONTROL</text>
+  <text x="318" y="128" fill="white" font-size="42" font-family="Segoe UI, Arial" font-weight="700">广播总览</text>
+  <text x="318" y="158" fill="#9EABC1" font-size="16" font-family="Segoe UI, Arial">像广播控制台一样把正在播出、今日排期和自动状态放在一个界面。</text>
+
+  <rect x="1180" y="70" width="128" height="48" rx="16" fill="#FF5A36"/>
+  <rect x="1322" y="70" width="92" height="48" rx="16" fill="#1B2436"/>
+  <rect x="1428" y="70" width="92" height="48" rx="16" fill="#1B2436"/>
+  <text x="1206" y="100" fill="white" font-size="16" font-family="Segoe UI, Arial" font-weight="700">开始播出</text>
+  <text x="1350" y="100" fill="white" font-size="16" font-family="Segoe UI, Arial">暂停</text>
+  <text x="1459" y="100" fill="white" font-size="16" font-family="Segoe UI, Arial">停止</text>
+
+  <g filter="url(#shadow)">
+    <rect x="302" y="196" width="860" height="292" rx="30" fill="url(#panel)"/>
+    <rect x="302" y="196" width="860" height="292" rx="30" fill="url(#hero)"/>
+  </g>
+  <text x="338" y="234" fill="#D2DBEC" font-size="12" font-family="Segoe UI, Arial" letter-spacing="2">NOW PLAYING</text>
+  <text x="338" y="294" fill="white" font-size="46" font-family="Segoe UI, Arial" font-weight="700">Waiting For Love</text>
+  <text x="338" y="328" fill="#BAC8DF" font-size="18" font-family="Segoe UI, Arial">晨间音乐带 · 当前没有手动干预，系统正在自动播出</text>
+  <rect x="984" y="232" width="136" height="42" rx="21" fill="#193F31"/>
+  <text x="1013" y="259" fill="#7DF0B4" font-size="16" font-family="Segoe UI, Arial" font-weight="700">自动播出中</text>
+  <rect x="338" y="360" width="788" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+  <rect x="338" y="360" width="454" height="10" rx="5" fill="#FF5A36"/>
+
+  <rect x="338" y="396" width="180" height="70" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <rect x="534" y="396" width="180" height="70" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <rect x="730" y="396" width="180" height="70" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <rect x="926" y="396" width="200" height="70" rx="20" fill="rgba(255,255,255,0.06)"/>
+  <text x="358" y="421" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">当前时间</text>
+  <text x="358" y="448" fill="white" font-size="19" font-family="Segoe UI, Arial" font-weight="700">2026-04-02 16:25</text>
+  <text x="554" y="421" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">剩余时间</text>
+  <text x="554" y="448" fill="white" font-size="19" font-family="Segoe UI, Arial" font-weight="700">2:14</text>
+  <text x="750" y="421" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">下一节目</text>
+  <text x="750" y="448" fill="white" font-size="19" font-family="Segoe UI, Arial" font-weight="700">18:00 晚高峰陪伴</text>
+  <text x="946" y="421" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">下一音频</text>
+  <text x="946" y="448" fill="white" font-size="19" font-family="Segoe UI, Arial" font-weight="700">City Lights Tonight</text>
+
+  <g filter="url(#shadow)">
+    <rect x="1188" y="196" width="338" height="190" rx="30" fill="url(#panel)"/>
+  </g>
+  <text x="1220" y="234" fill="#D2DBEC" font-size="12" font-family="Segoe UI, Arial" letter-spacing="2">SYSTEM STATUS</text>
+  <rect x="1220" y="258" width="130" height="48" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1364" y="258" width="130" height="48" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1220" y="320" width="130" height="48" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1364" y="320" width="130" height="48" rx="16" fill="rgba(255,255,255,0.05)"/>
+  <text x="1240" y="279" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">音频库</text>
+  <text x="1240" y="300" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">248</text>
+  <text x="1384" y="279" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">节目块</text>
+  <text x="1384" y="300" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">7</text>
+  <text x="1240" y="341" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">补位分类</text>
+  <text x="1240" y="362" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">Filler</text>
+  <text x="1384" y="341" fill="#96A4BA" font-size="13" font-family="Segoe UI, Arial">交叉淡化</text>
+  <text x="1384" y="362" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">4s</text>
+
+  <g filter="url(#shadow)">
+    <rect x="302" y="518" width="748" height="410" rx="30" fill="url(#panel)"/>
+  </g>
+  <text x="336" y="556" fill="#D2DBEC" font-size="12" font-family="Segoe UI, Arial" letter-spacing="2">TODAY SCHEDULE</text>
+  <rect x="336" y="586" width="680" height="72" rx="22" fill="rgba(47,127,255,0.22)"/>
+  <rect x="336" y="672" width="680" height="72" rx="22" fill="rgba(25,195,125,0.22)"/>
+  <rect x="336" y="758" width="680" height="72" rx="22" fill="rgba(255,122,69,0.22)"/>
+  <circle cx="370" cy="622" r="8" fill="#2F7FFF"/>
+  <circle cx="370" cy="708" r="8" fill="#19C37D"/>
+  <circle cx="370" cy="794" r="8" fill="#FF7A45"/>
+  <text x="392" y="616" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">晨间音乐带</text>
+  <text x="392" y="702" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">整点资讯</text>
+  <text x="392" y="788" fill="white" font-size="22" font-family="Segoe UI, Arial" font-weight="700">晚高峰陪伴</text>
+  <text x="392" y="642" fill="#BFD0E6" font-size="15" font-family="Segoe UI, Arial">07:00 - 09:00 / category / 随机</text>
+  <text x="392" y="728" fill="#BFD0E6" font-size="15" font-family="Segoe UI, Arial">09:00 - 09:30 / category / 顺序</text>
+  <text x="392" y="814" fill="#BFD0E6" font-size="15" font-family="Segoe UI, Arial">18:00 - 20:00 / random / 随机</text>
+
+  <g filter="url(#shadow)">
+    <rect x="1080" y="418" width="446" height="510" rx="30" fill="url(#panel)"/>
+  </g>
+  <text x="1114" y="456" fill="#D2DBEC" font-size="12" font-family="Segoe UI, Arial" letter-spacing="2">RECENT LOGS</text>
+  <rect x="1114" y="484" width="378" height="62" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1114" y="558" width="378" height="62" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1114" y="632" width="378" height="62" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <rect x="1114" y="706" width="378" height="62" rx="18" fill="rgba(255,255,255,0.05)"/>
+  <text x="1140" y="512" fill="white" font-size="17" font-family="Segoe UI, Arial">自动播出已开始</text>
+  <text x="1140" y="586" fill="white" font-size="17" font-family="Segoe UI, Arial">开始播放《Waiting For Love》</text>
+  <text x="1140" y="660" fill="white" font-size="17" font-family="Segoe UI, Arial">已命中节目块：晨间音乐带</text>
+  <text x="1140" y="734" fill="white" font-size="17" font-family="Segoe UI, Arial">下一首已进入交叉淡化预载</text>
+  <text x="1428" y="512" fill="#9AA6BD" font-size="14" font-family="Segoe UI, Arial">16:23:10</text>
+  <text x="1428" y="586" fill="#9AA6BD" font-size="14" font-family="Segoe UI, Arial">16:23:12</text>
+  <text x="1428" y="660" fill="#9AA6BD" font-size="14" font-family="Segoe UI, Arial">16:23:12</text>
+  <text x="1428" y="734" fill="#9AA6BD" font-size="14" font-family="Segoe UI, Arial">16:25:06</text>
+</svg>

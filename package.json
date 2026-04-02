@@ -1,0 +1,70 @@
+{
+  "name": "radioflow-desktop",
+  "version": "1.0.0",
+  "description": "Offline desktop radio automation app for Windows",
+  "main": "dist-electron/main/index.js",
+  "author": "OpenAI Codex",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:renderer\" \"npm:dev:electron:tsc\" \"npm:dev:electron\"",
+    "dev:renderer": "vite",
+    "dev:electron:tsc": "tsc -p electron/tsconfig.json --watch",
+    "dev:electron": "wait-on tcp:5173 file:dist-electron/main/index.js && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5173 electron .",
+    "build": "npm run build:renderer && npm run build:electron",
+    "build:renderer": "tsc -p tsconfig.json && vite build",
+    "build:electron": "tsc -p electron/tsconfig.json",
+    "dist:win": "npm run build && electron-builder --win nsis",
+    "lint": "tsc -p tsconfig.json --noEmit && tsc -p electron/tsconfig.json --noEmit"
+  },
+  "build": {
+    "appId": "com.radioflow.desktop",
+    "productName": "RadioFlow Desktop",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "extraMetadata": {
+      "main": "dist-electron/main/index.js"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "RadioFlow-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "dependencies": {
+    "@ant-design/icons": "^6.0.0",
+    "antd": "^5.28.0",
+    "dayjs": "^1.11.13",
+    "music-metadata": "^11.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "uuid": "^11.1.0",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^36.0.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19",
+    "wait-on": "^8.0.3"
+  }
+}
