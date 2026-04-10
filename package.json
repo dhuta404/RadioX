@@ -1,7 +1,7 @@
 {
-  "name": "radioflow-desktop",
-  "version": "1.0.0",
-  "description": "Offline desktop radio automation app for Windows",
+  "name": "radio404-desktop",
+  "version": "1.0.10",
+  "description": "404Radio desktop playout automation and calendar scheduling app for Windows",
   "main": "dist-electron/main/index.js",
   "author": "OpenAI Codex",
   "license": "MIT",
@@ -17,24 +17,26 @@
     "lint": "tsc -p tsconfig.json --noEmit && tsc -p electron/tsconfig.json --noEmit"
   },
   "build": {
-    "appId": "com.radioflow.desktop",
-    "productName": "RadioFlow Desktop",
+    "appId": "org.radio404.desktop",
+    "productName": "404Radio",
     "directories": {
       "output": "release"
     },
     "files": [
       "dist/**/*",
       "dist-electron/**/*",
+      "assets/**/*",
       "package.json"
     ],
     "extraMetadata": {
       "main": "dist-electron/main/index.js"
     },
     "win": {
+      "icon": "assets/icons/404radio.ico",
       "target": [
         "nsis"
       ],
-      "artifactName": "RadioFlow-Setup-${version}.${ext}"
+      "artifactName": "404Radio-${version}.${ext}"
     },
     "nsis": {
       "oneClick": false,
@@ -61,10 +63,11 @@
     "@vitejs/plugin-react": "^4.4.1",
     "concurrently": "^9.1.2",
     "cross-env": "^7.0.3",
-    "electron": "^36.0.0",
-    "electron-builder": "^25.1.8",
+    "electron": "^41.1.1",
+    "electron-builder": "^26.8.1",
+    "png-to-ico": "^3.0.1",
     "typescript": "^5.8.3",
-    "vite": "^5.4.19",
+    "vite": "^8.0.7",
     "wait-on": "^8.0.3"
   }
 }

@@ -1,100 +1,70 @@
-# 零基础运行指南
+# Beginner Guide
 
-## 第一步：安装 Node.js
+## 1. Install Node.js
 
-去 Node.js 官网安装 `Node.js 20` 或更高版本。
+Install Node.js 20 or newer from [nodejs.org](https://nodejs.org/).
 
-安装完成后，打开命令行，输入：
+Then check that both commands work:
 
 ```bash
 node -v
 npm -v
 ```
 
-如果能看到版本号，就说明安装成功。
+## 2. Open The Project Folder
 
-## 第二步：打开项目目录
+In PowerShell:
 
-把这个项目放到一个你容易找到的位置，例如桌面或文档目录。
-
-然后在命令行进入项目目录：
-
-```bash
-cd Radio
+```powershell
+cd "D:\Desktop\Fmod Pjkt\RadioX-main"
 ```
 
-## 第三步：安装依赖
-
-在项目目录执行：
+## 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-第一次安装会花几分钟，这很正常。
-
-## 第四步：启动桌面软件
-
-执行：
+## 4. Start The Desktop App
 
 ```bash
 npm run dev
 ```
 
-成功后会自动打开桌面窗口。
+## 5. Add Audio
 
-## 第五步：导入本地音频
+Open `Media Library`, then:
 
-打开软件后：
+1. Import files
+2. Import a folder once
+3. Or add a managed folder for a live library
 
-1. 点击左侧 `Library`
-2. 点击“导入文件”或“导入文件夹”
-3. 给音频设置分类
+## 6. Build The Schedule
 
-建议先准备这些分类：
+Open `Schedule Grid`, then:
 
-- `Music`
-- `News`
-- `Filler`
+1. Create a block
+2. Set the start and end time
+3. Choose the source type
+4. Choose a playout strategy
+5. Save the block
 
-## 第六步：创建节目排期
+## 7. Set Branding And Timezone
 
-打开左侧 `Schedule`：
+Open `Station`, then:
 
-1. 点击“新建节目块”
-2. 设置节目名称
-3. 设置开始和结束时间
-4. 选择来源类型
-5. 选择分类或播放列表
-6. 点击保存
+1. Select the original Babylon screenshot file
+2. Choose a station timezone or enable auto-detect
+3. Save settings
 
-## 第七步：开始自动播出
+## 8. Start Automation
 
-回到 `Dashboard`：
+Go back to `Playout` and click `Start Automation`.
 
-1. 点击“开始自动播出”
-2. 软件会根据当前时间自动判断应该播什么
-3. 如果当前时段没有节目块，会自动使用补位规则
-
-## 第八步：打包成 Windows 安装包
-
-如果你已经在 Windows 上，并且想生成可以安装的 `exe`：
+## 9. Build A Windows Installer
 
 ```bash
 npm run dist:win
 ```
 
-打包完成后，到 `release` 文件夹里找：
-
-```text
-RadioFlow-Setup-1.0.0.exe
-```
-
-双击它就可以像普通 Windows 软件一样安装。
-
-## 新手提示
-
-- 先导入音频，再做排期
-- 先把分类整理好，节目块规则会更清楚
-- 如果没有节目块命中，系统会尝试补位
-- 如果没有可用补位音频，建议到 `Rules` 页面设置 fallback 音频池
+The installer will be created in the `release/` folder.
