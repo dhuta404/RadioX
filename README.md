@@ -1,6 +1,6 @@
-# BABYLON Radio Desk
+# RadioX
 
-BABYLON Radio Desk is a Windows desktop radio playout application built for 24-hour calendar scheduling, managed audio libraries, unattended automation, and day-to-day station operations.
+RadioX is a Windows desktop radio playout application built for 24-hour calendar scheduling, managed audio libraries, unattended automation, and day-to-day station operations.
 
 ## What It Does
 
